@@ -57,7 +57,7 @@ header {
 }
 
 .navbar a {
-   color: #000;
+   color: white;
     font-size: 1.3rem;
     text-decoration: none;
     transition: color 0.3s;
@@ -324,6 +324,9 @@ background: linear-gradient(90deg,rgb(131, 127, 234) 0%, rgb(150, 155, 245) 53%,
 
 
     .navbar {
+        background-image: url(image/kaba.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -340,14 +343,10 @@ background: linear-gradient(90deg,rgb(131, 127, 234) 0%, rgb(150, 155, 245) 53%,
     .navbar ul {
         flex-direction: column;
     }
-
-    .navbar li {
-        border-top: 1px solid #444;
-    }
-
     .navbar a {
         display: block;
         padding: 15px;
+        text-shadow: 0 0 0 0.6rem rgba(10, 6, 3, 0.25);
     }
 
     /* Afficher menu quand checkbox cochée */
