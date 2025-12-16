@@ -1,10 +1,11 @@
-.home{
-    background-image: url(mosque.jpg);
+.home {
+    background-image: url(image/mosque.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     height: 100vh;
 }
+
 /* Reset et styles de base */
 * {
     margin: 0;
@@ -15,7 +16,8 @@
 body {
     font-family: Arial, sans-serif;
 }
-.log{
+
+.log {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -26,10 +28,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
+    padding: 10px 10px;
+    background-color: #f8f6f2;
     color: white;
     position: relative;
+     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+     position: fixed;
+     width: 100%;
+     z-index: 9999;
+}
+
+.entete {
+    height: 220px !important;
+}
+.nav-link.active {
+    color: #FFBE31;
 }
 
 .logo {
@@ -37,7 +50,6 @@ header {
     font-weight: bold;
 }
 
-/* Navbar desktop */
 .navbar ul {
     list-style: none;
     display: flex;
@@ -45,7 +57,8 @@ header {
 }
 
 .navbar a {
-    color: white;
+   color: #000;
+    font-size: 1.3rem;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -66,27 +79,239 @@ header {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     transition: 0.3s;
 }
 /* Checkbox hack */
 #menu-toggle {
     display: none;
 }
-
-
-.card{
-    width: 700px;
-    height: 220px;
-    background-color: aliceblue;
+.notre {
+    height: 200px !important;
+}
+a{
+    text-decoration: none;
+}
+footer a{
+    color: white;
 }
 
-.card1{
-    width: 50px;
-    height: 50px;
+.pret {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    height: 400px !important;
+}
+
+.card1 {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.value {
+    background-color: #F9FAFC !important;
+}
+.card_apro {
+    background-color: white !important;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.card_apro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ff9900;
+}
+
+.car{
+    background: white !important;
+}
+
+.card1 {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #ff9900;
 }
+.card2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #28ca56;
+}
+.card3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #594ef1;
+}
+.card4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #690cb1;
+}
+.card5 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   background-color: #e4440f;
+}
+.card6 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #91c022;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 70% !important;
+}
+
+.stat-box {
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-8px);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.stat-box h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.form-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* TITRES DES ÉTAPES */
+.step-title h3 {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* NUMÉROS D'ÉTAPES */
+.card-fr {
+    width: 45px;
+    height: 45px;
+    background: #f5a623;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(245, 166, 35, 0.5);
+}
+
+.card-email {
+    width: 45px;
+    height: 45px;
+   background: #1AB050;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-adress {
+    width: 45px;
+    height: 45px;
+    background: #2D73EE;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-danger {
+    width: 45px;
+    height: 45px;
+    background: red;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INPUTS PREMIUM */
+.form-control,
+.form-select {
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* FOCUS ÉLÉGANT */
+.form-control:focus,
+.form-select:focus {
+    border-color: #f5a623;
+    box-shadow: 0 0 0 0.2rem rgba(245, 166, 35, 0.25);
+}
+
+/* BOUTON PREMIUM */
+.btn-warning {
+    border-radius: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(245, 166, 35, 0.4);
+}
+
+.cod {
+    border: 1px solid #f5a623;
+    background-color: #f8f6f2;
+}
+.card{
+ background: #ede693;
+background: linear-gradient(90deg,rgba(237, 230, 147, 1) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 64%, rgba(255, 255, 255, 1) 96%);
+}
+.card1_1{
+  background: #2A7B9B;
+background: linear-gradient(90deg,rgb(136, 239, 170) 0%, rgb(142, 236, 148) 53%, rgba(255, 255, 255, 1) 81%) !important;
+}
+.card1_2{
+ background: #2A7B9B;
+background: linear-gradient(90deg,rgb(131, 127, 234) 0%, rgb(150, 155, 245) 53%, rgba(255, 255, 255, 1) 81%) !important;
+}
+
+
+
 
 /* Styles pour mobile */
 @media (max-width: 768px) {
@@ -94,15 +319,19 @@ header {
         display: flex;
     }
 
+
     .navbar {
+        display: flex;
+        flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
-        width: 100%;
+        width: 100% !important;
         background-color: #333;
         overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease-out;
+        /* max-height: 0; */
+        opacity: 0;
+        /* transition: max-height 0.3s ease-out; */
     }
 
     .navbar ul {
@@ -119,9 +348,9 @@ header {
     }
 
     /* Afficher menu quand checkbox cochée */
-    #menu-toggle:checked + .burger + .navbar {
-        max-height: 500px; 
-        transition: max-height 0.3s ease-in;
+    #menu-toggle:checked+.burger+.navbar {
+        max-height: 500px;
+        opacity: 1;
+        /* transition: max-height 0.3s ease-in; */
     }
 }
-

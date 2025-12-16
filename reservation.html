@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class=" d-flex">
+        <div class=" d-flex align-items-center gap-3">
+            <div class="log d-flex align-items-center justify-content-center">
+                OP
+            </div>
+            <div class="logo text-black">Oumra prestige</div>
+        </div>
+        <!-- Checkbox pour le menu burger -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav class="navbar d-flex  w-50 align-items-center justify-content-between">
+            <ul class="text-center text-black">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="reservation.html" class="nav-link active">Réservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="d-flex  gap-4">
+                <button type="button" class="btn bg-primary-subtle px-4 p-2">Connexion</button>
+                <button type="button" class="btn bg-warning px-4 p-2">s'inscrire</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid text-center pt-5 p-0 ">
+        <div
+            class="container-fluid text-center d-flex flex-column justify-content-center align-items-center entete bg-warning py-5 mb-4">
+            <h1 class="fs-1 text-white">Réservez votre Oumra</h1>
+            <p class="fs-5 text-white">Commencez votre voyage spirituel avec nous.</p>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+
+                <!-- CARTE PREMIUM -->
+                <div class="form-card p-4 p-md-5">
+
+                    <form class="d-flex flex-column gap-4">
+
+                        <!-- ===== ÉTAPE 1 ===== -->
+                        <div class="step-title d-flex align-items-center gap-3">
+                            <div class="card-fr">1</div>
+                            <h3>Informations personnelles</h3>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label>Nom <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Prénom <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label>Email <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Téléphone <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!-- ===== ÉTAPE 2 ===== -->
+                        <div class="step-title d-flex align-items-center gap-3">
+                            <div class="card-fr">2</div>
+                            <h3>Détails du voyage</h3>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label>Type de formule</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Durée du séjour</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label>Date de départ</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label>Nombre de personnes</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>Aéroport de départ</label>
+                            <select class="form-select py-3">
+                                <option>Choisir l’aéroport</option>
+                                <option>Niamey</option>
+                                <option>Abuja</option>
+                                <option>Paris</option>
+                            </select>
+                        </div>
+
+                        <hr>
+
+                        <!-- ===== ÉTAPE 3 ===== -->
+                        <div class="step-title d-flex align-items-center gap-3">
+                            <div class="card-fr">3</div>
+                            <h3>Options supplémentaires</h3>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                <strong>Assistance visa</strong><br>
+                                Nous nous occupons de toutes les démarches administratives (+150€)
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                <strong>Assurance voyage</strong><br>
+                                Protection complète pendant votre séjour (+ 100€)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                <strong>Guide privé</strong><br>
+                                Accompagnement personnalisé exclusif (+500€)s
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                <strong>Chambre individuelle</strong><br>
+                                Supplément chambre single (+300€)
+                            </label>
+                        </div>
+
+                        <div>
+                            <label>Demandes spéciales ou informations complémentaires</label>
+                            <textarea class="form-control" rows="4"
+                                placeholder="Allergies alimentaires, besoins médicaux, préférences particulières..."></textarea>
+                        </div>
+
+                        <div class="cod p-3 rounded-3 ">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex flex-column">
+                                    <p>Récapitulatif : </p>
+                                    <p>Prix total estimé :</p>
+                                    <p>* Prix dennitit contrme apres validation</p>
+                                </div>
+                                <h1 class="text-warning">0€</h1>
+                            </div>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                J'accepte les <a href="" class="text-decoration-none text-warning ">conditions
+                                    d'utilisation</a> et la <a href=""
+                                    class="text-decoration-none text-warning">politique de la confidentialité</a>
+                        </div>
+
+                        <!-- BOUTON -->
+                        <button class="btn btn-warning btn-lg text-white mt-3">
+                            Confirmer ma résernation
+                        </button>
+                        <p class="text-center"><i class="bi bi-lock fs-3 text-success"></i> Paiement sécurisé - Vos
+                            données sont protégées</p>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white pt-5">
+        <section class="container-fluid py-5">
+            <div class="row justify-content-center g-4">
+
+                <!-- Bloc 1 -->
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <h3 class="text-warning mb-3">Oumra Prestige</h3>
+                    <small>
+                        Votre partenaire de confiance pour un voyage spirituel
+                        inoubliable vers La Mecque.
+                    </small>
+                </div>
+
+                <!-- Bloc 2 -->
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <h3 class="text-warning mb-3">Liens rapides</h3>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="index.html">Accueil</a>
+                        <a href="apropos.html">À propos</a>
+                        <a href="reservation.html"> Réservation</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Bloc 3 -->
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <h3 class="text-warning mb-3">Contact</h3>
+
+                    <div class="d-flex justify-content-center gap-2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <small>Niamey – Niger</small>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-2">
+                        <i class="bi bi-telephone"></i>
+                        <small>(227) 98 45 67 89</small>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-2">
+                        <i class="bi bi-envelope"></i>
+                        <small>contact@oumraprestige.ne</small>
+                    </div>
+                </div>
+
+                <!-- Bloc 4 -->
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <h3 class="text-warning mb-3">My Account</h3>
+                    <p>Tous les jours</p>
+                    <p>10h00 – 22h00</p>
+
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                        <i class="bi bi-instagram fs-4"></i>
+                        <i class="bi bi-twitter-x fs-4"></i>
+                        <i class="bi bi-tiktok fs-4"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-5 pt-3 border-top border-secondary">
+                <small>© 2025 Oumra Prestige — Tous droits réservés</small>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
