@@ -289,6 +289,14 @@ h3 {
     border-radius: 12px;
     padding: 12px;
 }
+.btne:hover{
+    background-color: #f6b142 !important;
+    color: white !important;
+
+}
+footer a:hover{
+    color: #f5a623 !important;
+}
 
 /* FOCUS ÉLÉGANT */
 .form-control:focus,
@@ -338,13 +346,29 @@ h3 {
     .burger {
         display: flex;
     }
+    .bt_conxion{
+        display: none !important;
+        /* flex-direction: column !important; */
+    }
+    .nav1{ 
+        display: flex !important;
+         align-items: start !important;
+         /* padding-left: 16px; */
+       font-size: 1.5rem;
+       color: white;
+    }
+    header{
+        align-items: start !important;
+    }
+
 
 
     .navbar {
-        background-image: url(image/kaba.jpg);
+        /* background-image: url(image/kaba.jpg); */
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
+         align-items: start !important;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -359,6 +383,7 @@ h3 {
 
     .navbar ul {
         flex-direction: column;
+         align-items: start !important;
     }
 
     .navbar a {
