@@ -30,17 +30,18 @@ header {
     align-items: center;
     padding: 10px 10px;
     background-color: #f8f6f2;
-    color: white;
+    color: #000;
     position: relative;
-     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
-     position: fixed;
-     width: 100%;
-     z-index: 9999;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .entete {
     height: 220px !important;
 }
+
 .nav-link.active {
     color: #FFBE31;
 }
@@ -57,7 +58,7 @@ header {
 }
 
 .navbar a {
-   color: white;
+    color: #000;
     font-size: 1.3rem;
     text-decoration: none;
     transition: color 0.3s;
@@ -74,7 +75,8 @@ header {
     gap: 5px;
     cursor: pointer;
 }
-.inscrire{
+
+.inscrire {
     padding-top: 120px;
 }
 
@@ -85,17 +87,21 @@ header {
     background-color: black;
     transition: 0.3s;
 }
+
 /* Checkbox hack */
 #menu-toggle {
     display: none;
 }
+
 .notre {
     height: 200px !important;
 }
-a{
+
+a {
     text-decoration: none;
 }
-footer a{
+
+footer a {
     color: white;
 }
 
@@ -120,6 +126,7 @@ footer a{
 .value {
     background-color: #F9FAFC !important;
 }
+
 .card_apro {
     background-color: white !important;
     transition: all 0.5s ease;
@@ -132,7 +139,7 @@ footer a{
     border: 1px solid #ff9900;
 }
 
-.car{
+.car {
     background: white !important;
 }
 
@@ -142,30 +149,35 @@ footer a{
     border-radius: 50%;
     background-color: #ff9900;
 }
+
 .card2 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #28ca56;
 }
+
 .card3 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #594ef1;
 }
+
 .card4 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     background-color: #690cb1;
 }
+
 .card5 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-   background-color: #e4440f;
+    background-color: #e4440f;
 }
+
 .card6 {
     width: 60px;
     height: 60px;
@@ -194,6 +206,7 @@ h1 {
     font-size: 3rem;
     font-weight: bold;
 }
+
 h3 {
     font-size: 1.6rem;
     font-weight: bold;
@@ -203,6 +216,7 @@ h3 {
     font-size: 3rem;
     font-weight: bold;
 }
+
 .form-card {
     background: #ffffff;
     border-radius: 20px;
@@ -233,7 +247,7 @@ h3 {
 .card-email {
     width: 45px;
     height: 45px;
-   background: #1AB050;
+    background: #1AB050;
     color: #fff;
     border-radius: 50%;
     font-weight: bold;
@@ -300,17 +314,20 @@ h3 {
     border: 1px solid #f5a623;
     background-color: #f8f6f2;
 }
-.card{
- background: #ede693;
-background: linear-gradient(90deg,rgba(237, 230, 147, 1) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 64%, rgba(255, 255, 255, 1) 96%);
+
+.card {
+    background: #ede693;
+    background: linear-gradient(90deg, rgba(237, 230, 147, 1) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 64%, rgba(255, 255, 255, 1) 96%);
 }
-.card1_1{
-  background: #2A7B9B;
-background: linear-gradient(90deg,rgb(136, 239, 170) 0%, rgb(142, 236, 148) 53%, rgba(255, 255, 255, 1) 81%) !important;
+
+.card1_1 {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgb(136, 239, 170) 0%, rgb(142, 236, 148) 53%, rgba(255, 255, 255, 1) 81%) !important;
 }
-.card1_2{
- background: #2A7B9B;
-background: linear-gradient(90deg,rgb(131, 127, 234) 0%, rgb(150, 155, 245) 53%, rgba(255, 255, 255, 1) 81%) !important;
+
+.card1_2 {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgb(131, 127, 234) 0%, rgb(150, 155, 245) 53%, rgba(255, 255, 255, 1) 81%) !important;
 }
 
 
@@ -343,7 +360,9 @@ background: linear-gradient(90deg,rgb(131, 127, 234) 0%, rgb(150, 155, 245) 53%,
     .navbar ul {
         flex-direction: column;
     }
+
     .navbar a {
+        color: white;
         display: block;
         padding: 15px;
         text-shadow: 0 0 0 0.6rem rgba(10, 6, 3, 0.25);
