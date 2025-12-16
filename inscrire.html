@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class=" d-flex">
+        <div class=" d-flex align-items-center gap-3">
+            <div class="log d-flex align-items-center justify-content-center">
+                OP
+            </div>
+            <div class="logo text-black">Oumra prestige</div>
+        </div>
+        <!-- Checkbox pour le menu burger -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- Navbar -->
+        <nav class="navbar d-flex w-50 align-items-center justify-content-between">
+            <ul class="text-center">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+             <div class="d-flex  gap-4">
+               <a href="connexion.html"> <button type="button" class="btn bg-primary-subtle px-4 p-2">Connexion</button></a>
+              <a href="inscrire.html">  <button type="button" class="btn bg-warning px-4 p-2">s'inscrire</button></a>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid inscrire min-vh-100 d-flex align-items-center justify-content-center bg-light">
+    <div class="row w-100 justify-content-center">
+        
+        <!-- FORM CARD -->
+        <div class="col-12 col-md-8 col-lg-5">
+            <div class="form-card p-4 p-md-5 shadow-lg rounded-4 bg-white">
+
+                <form class="d-flex flex-column gap-4">
+
+                    <!-- ICON -->
+                    <div class="d-flex justify-content-center">
+                        <div class="card3 d-flex align-items-center justify-content-center mb-2">
+                            <i class="bi bi-person-add text-white fs-3"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-center fw-bold">Créer un compte</h3>
+                    <p class="text-center text-muted">
+                        Rejoignez la communauté Oumra Prestige
+                    </p>
+
+                    <div>
+                        <label>Nom <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" placeholder="Votre nom" required>
+                    </div>
+
+                    <div>
+                        <label>Prénom <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" placeholder="Votre prénom" required>
+                    </div>
+
+                    <div>
+                        <label>Email <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" placeholder="exemple@gmail.com" required>
+                    </div>
+
+                    <div>
+                        <label>Téléphone <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" placeholder="+227 98 00 00 00" required>
+                    </div>
+
+                    <div>
+                        <label>Mot de passe <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control" placeholder="**********" required>
+                    </div>
+
+                    <div>
+                        <label>Confirmer le mot de passe <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control" placeholder="**********" required>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" required>
+                        <label class="form-check-label">
+                            J'accepte les 
+                            <a href="#" class="text-warning text-decoration-none">conditions d'utilisation</a> 
+                            et la 
+                            <a href="#" class="text-warning text-decoration-none">politique de confidentialité</a>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-warning btn-lg text-white">
+                        S'inscrire
+                    </button>
+
+                    <div class="text-center">
+                        <span>Vous avez déjà un compte ?</span>
+                        <a href="#" class="text-warning text-decoration-none fw-semibold">
+                            Se connecter
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

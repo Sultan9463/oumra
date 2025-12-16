@@ -74,6 +74,9 @@ header {
     gap: 5px;
     cursor: pointer;
 }
+.inscrire{
+    padding-top: 120px;
+}
 
 .burger span {
     display: block;
